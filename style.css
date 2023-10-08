@@ -39,3 +39,38 @@ body {
   justify-content: center;
   align-items: center;
 }
+#middleBox{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.controlBox,
+.drawingBox,
+.eraseBox{
+  border: black solid 1px;
+}
+.controlBox,
+.eraseBox{
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#middleBox button{
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(128, 128, 128, 0.5);
+  color: black;
+  transition: 0.7s;
+}
+#middleBox button:hover{
+  transform: scale(1.1);
+  background-color: rgba(128, 128, 128, 0.8);
+}
+.drawingBox{
+  height: 700px;
+  width: 700px;
+}
